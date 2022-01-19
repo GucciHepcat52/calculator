@@ -32,6 +32,9 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol === "**") {
 		console.log(Math.pow(num1, 2));
 		console.log(Math.pow(num2, 2));
+	} else if (mathSymbol === "***") {
+		console.log(Math.pow(num1, 3));
+		console.log(Math.pow(num2, 3));
 	} else {
 		console.log("This operaton cannot be done");
 	}

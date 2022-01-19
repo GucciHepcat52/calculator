@@ -13,6 +13,7 @@ reader.question("What would you like to calculate?", function(input){
 	mathSymbol = tokens[0];
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
+	num3 = Number(tokens[3]);
 
 	// console.log(mathSymbol);
 	// console.log(num1);
@@ -35,6 +36,9 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol === "***") {
 		console.log(Math.pow(num1, 3));
 		console.log(Math.pow(num2, 3));
+	} else if (mathSymbol === "****") {
+		console.log(Math.pow(num1, num3));
+		console.log(Math.pow(num2, num3));
 	} else {
 		console.log("This operaton cannot be done");
 	}
